@@ -2,109 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Byteworks: AI & Tech Club</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            background: "#0f172a",
-            primary: "#9333ea",
-            accent: "#38bdf8",
-            text: "#e2e8f0"
+            background: "#1E1B4B",
+            primary: "#FACC15",
+            accent: "#A78BFA",
+            text: "#F3F4F6"
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          },
+          animation: {
+            float: 'float 4s ease-in-out infinite'
           }
         }
       }
     }
   </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-background text-text font-sans">
 
-  <header class="bg-primary text-white text-center py-6 text-3xl font-bold">
+  <header class="bg-primary text-black text-center py-10 text-4xl font-bold shadow">
     Byteworks AI & Tech Club
   </header>
 
-  <nav class="flex justify-center bg-zinc-900 shadow-md text-text">
-    <a href="index.html" class="mx-4 py-4 hover:text-accent transition">Home</a>
-    <a href="projects.html" class="mx-4 py-4 hover:text-accent transition">Projects</a>
-    <a href="#about" class="mx-4 py-4 hover:text-accent transition">About</a>
-    <a href="#meetings" class="mx-4 py-4 hover:text-accent transition">Meetings</a>
-    <a href="#leadership" class="mx-4 py-4 hover:text-accent transition">Leadership</a>
-    <a href="#join" class="mx-4 py-4 hover:text-accent transition">Why Join?</a>
-    <a href="#contact" class="mx-4 py-4 hover:text-accent transition">Join Us</a>
+  <nav class="bg-white shadow-md sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-center space-x-6 py-4 text-lg">
+        <a href="#about" class="text-black hover:text-primary">About</a>
+        <a href="#meetings" class="text-black hover:text-primary">Meetings</a>
+        <a href="#leadership" class="text-black hover:text-primary">Leadership</a>
+        <a href="#join" class="text-black hover:text-primary">Why Join?</a>
+        <a href="#contact" class="text-black hover:text-primary">Join Us</a>
+        <a href="projects.html" class="text-black hover:text-primary">Projects</a>
+      </div>
+    </div>
   </nav>
 
-  <section id="about" class="py-16 text-center" data-aos="fade-up">
-    <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-primary mb-4">Welcome to Byteworks!</h2>
-      <p class="text-lg">A club for high school students (grades 9-12) passionate about AI, programming, and technology. We build innovative tech projects, explore emerging tools, and grow together.</p>
-    </div>
+  <!-- Animated Blob -->
+  <div class="flex justify-center mt-10">
+    <div class="w-64 h-64 bg-accent opacity-60 rounded-full blur-2xl animate-float"></div>
+  </div>
+
+  <section id="about" class="py-16 text-center px-4" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-primary mb-4">Welcome to Byteworks!</h2>
+    <p class="text-lg text-text max-w-2xl mx-auto">A club for high school students (grades 9-12) passionate about AI, programming, and technology. We build innovative tech projects, explore emerging tools, and grow together.</p>
   </section>
 
-  <section id="meetings" class="py-16 bg-zinc-800 text-center" data-aos="fade-up">
-    <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-accent mb-4">Club Meetings</h2>
-      <p><strong>Where:</strong> Online Zoom (link via email)</p>
-      <p><strong>When:</strong> Wednesdays at 5 PM Pacific</p>
-      <p>Join us for project work, AI workshops, and collaboration!</p>
-    </div>
+  <section id="meetings" class="py-16 bg-white text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-primary mb-4">Club Meetings</h2>
+    <p class="text-black"> <strong>Where:</strong> Online Zoom (link via email)</p>
+    <p class="text-black"> <strong>When:</strong> Wednesdays at 5 PM Pacific</p>
+    <p class="text-black">Join us for project work, AI workshops, and collaboration!</p>
   </section>
 
-  <section id="leadership" class="py-16 text-center" data-aos="fade-up">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-primary mb-6">Leadership Team</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-zinc-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
-          <h3 class="text-xl font-bold text-accent">President: Rohan Mishra</h3>
-          <p>Oversees club activities and guides projects.</p>
-        </div>
-        <div class="bg-zinc-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
-          <h3 class="text-xl font-bold text-accent">Vice President: Thomas Park</h3>
-          <p>Supports event planning and leadership.</p>
-        </div>
-        <div class="bg-zinc-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
-          <h3 class="text-xl font-bold text-accent">Secretary: Tarak Muvva</h3>
-          <p>Documents meetings and announcements.</p>
-        </div>
-        <div class="bg-zinc-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
-          <h3 class="text-xl font-bold text-accent">Treasurers: Ashwin, Tanush & Aryaveer</h3>
-          <p>Manage club funds and project resources.</p>
-        </div>
+  <section id="leadership" class="py-16 text-center px-4" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-primary mb-6">Leadership Team</h2>
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-black">President: Rohan Mishra</h3>
+        <p class="text-black">Oversees club activities and guides projects.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-black">Vice President: Thomas Park</h3>
+        <p class="text-black">Supports event planning and leadership.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-black">Secretary: Tarak Muvva</h3>
+        <p class="text-black">Documents meetings and announcements.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold text-black">Treasurers: Ashwin, Tanush & Aryaveer</h3>
+        <p class="text-black">Manage club funds and project resources.</p>
       </div>
     </div>
   </section>
 
-  <section id="join" class="py-16 text-center bg-zinc-900" data-aos="fade-up">
-    <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-primary mb-4">Why Join?</h2>
-      <ul class="space-y-4 text-lg">
-        <li>Gain real-world AI and coding experience</li>
-        <li>Collaborate with like-minded peers</li>
-        <li>Build projects that solve real problems</li>
-      </ul>
-    </div>
+  <section id="join" class="py-16 bg-white text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-primary mb-4">Why Join?</h2>
+    <ul class="space-y-4 text-lg text-black">
+      <li>Gain real-world AI and coding experience</li>
+      <li>Collaborate with like-minded peers</li>
+      <li>Build projects that solve real problems</li>
+    </ul>
   </section>
 
-  <section id="contact" class="py-16 bg-zinc-900" data-aos="zoom-in">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-accent mb-6 text-center">Join the Club</h2>
+  <section id="contact" class="py-16 px-4" data-aos="zoom-in">
+    <h2 class="text-3xl font-bold text-accent mb-6 text-center">Join the Club</h2>
+    <div class="max-w-4xl mx-auto">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdr7pdU2Ur1h94YiAMozUokqNkGw-DBlBJKd5k6MMCn0pB-1g/viewform?embedded=true" 
-        width="100%" height="1908" frameborder="0" marginheight="0" marginwidth="0">
-        Loading…
-      </iframe>
+        width="100%" height="1908" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
   </section>
 
-  <footer class="bg-zinc-950 text-center text-sm py-6 text-gray-400">
+  <footer class="bg-primary text-black text-center py-6">
     &copy; 2025 Byteworks AI & Tech Club — All rights reserved.
   </footer>
 
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
