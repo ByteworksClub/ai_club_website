@@ -1,178 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byteworks: AI & Tech Club</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #222;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Byteworks AI & Tech Club</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e3c72',
+            secondary: '#2a5298'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
         }
-
-        header {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            padding: 30px 15px;
-            text-align: center;
-            font-size: 2em;
-            font-weight: bold;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        nav a {
-            color: #2a5298;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1em;
-            padding: 15px 10px;
-            transition: color 0.3s ease, border-bottom 0.3s ease;
-            border-bottom: 2px solid transparent;
-        }
-
-        nav a:hover {
-            color: #1e3c72;
-            border-bottom: 2px solid #1e3c72;
-        }
-
-        section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            margin: 20px 0;
-            border-radius: 15px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            font-size: 0.9em;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 20px;
-            margin-top: 20px;
-            background: linear-gradient(to right, #007BFF, #0056b3);
-            color: white;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background 0.3s ease, transform 0.2s ease;
-        }
-
-        .btn:hover {
-            background: linear-gradient(to right, #0056b3, #003f7f);
-            transform: translateY(-2px);
-        }
-
-        h2 {
-            color: #1e3c72;
-        }
-
-        p {
-            line-height: 1.6;
-            font-size: 1.1em;
-        }
-    </style>
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-sans bg-gray-50 text-gray-800">
 
-    <header>Byteworks AI & Tech Club</header>
-    
-    <nav>
-        <a href="#about">About</a>
-        <a href="#meetings">Meetings</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#join">Why Join?</a>
-        <a href="#contact">Join Us</a>
-    </nav>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-primary to-secondary text-white text-center py-10 shadow-lg">
+    <h1 class="text-4xl font-bold">Byteworks AI & Tech Club</h1>
+  </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>Welcome to Byteworks AI & Tech Club!</h2>
-            <p>A club for high school students (grades 9-12) passionate about AI, programming, and technology. We build many innovative technology-related projects, explore emerging tech, and work together to push our skills to the next level.</p>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="hidden md:flex space-x-6">
+          <a href="#about" class="text-blue-700 hover:text-secondary border-b-2 border-transparent hover:border-blue-500 transition">About</a>
+          <a href="#meetings" class="text-blue-700 hover:text-secondary border-b-2 border-transparent hover:border-blue-500 transition">Meetings</a>
+          <a href="#leadership" class="text-blue-700 hover:text-secondary border-b-2 border-transparent hover:border-blue-500 transition">Leadership</a>
+          <a href="#join" class="text-blue-700 hover:text-secondary border-b-2 border-transparent hover:border-blue-500 transition">Why Join?</a>
+          <a href="#contact" class="text-blue-700 hover:text-secondary border-b-2 border-transparent hover:border-blue-500 transition">Join Us</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </nav>
 
-    <section id="meetings">
-        <div class="container">
-            <h2>Club Meetings</h2>
-            <p><strong>Where:</strong> Online Zoom Meetings (link provided by email)</p>
-            <p><strong>When:</strong> Every Wednesday at 5 PM Pacific</p>
-            <p>Join us to work on team coding projects, learn AI concepts, and collaborate with other like-minded students.</p>
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="max-w-3xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold text-primary mb-4">Welcome to Byteworks AI & Tech Club!</h2>
+      <p class="text-lg text-gray-700">A club for high school students (grades 9-12) passionate about AI, programming, and technology. We build innovative projects, explore emerging tech, and collaborate to push our skills to the next level.</p>
+    </div>
+  </section>
+
+  <!-- Meetings Section -->
+  <section id="meetings" class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold text-primary mb-4">Club Meetings</h2>
+      <p class="text-lg"> <strong>Where:</strong> Online Zoom Meetings (link provided by email)</p>
+      <p class="text-lg mt-2"> <strong>When:</strong> Every Wednesday at 5 PM Pacific</p>
+      <p class="text-lg mt-4">Join us to work on team coding projects, learn AI concepts, and collaborate with other like-minded students!</p>
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section id="leadership" class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-primary mb-8">Leadership Team</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">President: Rohan Mishra</h3>
+          <p class="mt-2 text-gray-700">Oversees club activities and helps guide projects and discussions.</p>
         </div>
-    </section>
-
-    <section id="leadership">
-        <div class="container">
-            <h2>Leadership Team</h2>
-            <div class="card">
-                <h3>President: Rohan Mishra</h3>
-                <p>Oversees club activities and helps guide projects and discussions.</p>
-            </div>
-            <div class="card">
-                <h3>Vice President: Thomas Park</h3>
-                <p>Assists in managing club meetings and events.</p>
-            </div>
-            <div class="card">
-                <h3>Secretary: Tarak Muvva</h3>
-                <p>Keeps track of club activities, meeting notes, and announcements.</p>
-            </div>
-            <div class="card">
-                <h3>Treasurers: Ashwin Willy, Tanush Saraogi, & Aryaveer Dhawan</h3>
-                <p>Manages club funds and helps organize resources for projects.</p>
-            </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">Vice President: Thomas Park</h3>
+          <p class="mt-2 text-gray-700">Assists in managing club meetings and events.</p>
         </div>
-    </section>
-
-    <section id="join">
-        <div class="container">
-            <h2>Why Join?</h2>
-            <p>Gain experience in AI and coding</p>
-            <p>Collaborate with like-minded students who want to go into the field of technology</p>
-            <p>Build projects that make a real-world impact</p>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">Secretary: Tarak Muvva</h3>
+          <p class="mt-2 text-gray-700">Keeps track of club activities, meeting notes, and announcements.</p>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Join the Club</h2>
-            <p>Interested in joining us? Sign up for the club below!</p>
-            <a href="mailto:mishrarohan@icloud.com" class="btn">Contact Us</a>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">Treasurers: Ashwin Willy, Tanush Saraogi, & Aryaveer Dhawan</h3>
+          <p class="mt-2 text-gray-700">Manage club funds and organize resources for projects.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        &copy; 2025 Byteworks AI & Tech Club | All Rights Reserved
-    </footer>
+  <!-- Why Join Section -->
+  <section id="join" class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold text-primary mb-6">Why Join?</h2>
+      <ul class="space-y-4 text-lg text-gray-700">
+        <li>Gain experience in AI and coding</li>
+        <li>Collaborate with like-minded students</li>
+        <li>Build projects that make a real-world impact</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="max-w-3xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold text-primary mb-4">Join the Club</h2>
+      <p class="text-lg text-gray-700">Interested in joining us? Sign up for the club below!</p>
+      <a href="mailto:mishrarohan@icloud.com" class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-primary to-secondary text-white text-center py-6">
+    &copy; 2025 Byteworks AI & Tech Club | All Rights Reserved
+  </footer>
 
 </body>
 </html>
