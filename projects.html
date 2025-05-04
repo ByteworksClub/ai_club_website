@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Byteworks Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6B21A8',
+            secondary: '#D97706',
+            accent: '#FBBF24'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-zinc-900 text-zinc-100">
+
+  <header class="bg-gradient-to-r from-primary to-secondary text-white text-center py-10 shadow-lg">
+    <h1 class="text-4xl font-bold">Byteworks Projects</h1>
+    <p class="mt-2 text-zinc-300">Explore the projects we've built and deployed</p>
+    <a href="index.html" class="inline-block mt-4 px-6 py-2 bg-accent text-black font-semibold rounded hover:bg-yellow-400 transition">← Back to Home</a>
+  </header>
+
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-zinc-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h2 class="text-2xl font-semibold text-accent">Hacker News Keyword Trends</h2>
+        <p class="mt-2 text-zinc-300">A web app that visualizes trending keywords over time from Hacker News using the Algolia API.</p>
+        <a href="https://hn-trends-tau.vercel.app/" target="_blank" class="inline-block mt-4 px-4 py-2 bg-primary rounded hover:bg-purple-700 transition">View Project</a>
+      </div>
+
+      <div class="bg-zinc-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h2 class="text-2xl font-semibold text-accent">UTR Matcher</h2>
+        <p class="mt-2 text-zinc-300">Helps junior tennis players find potential matchups by comparing Universal Tennis Ratings.</p>
+        <a href="https://utr-matcher.vercel.app/" target="_blank" class="inline-block mt-4 px-4 py-2 bg-primary rounded hover:bg-purple-700 transition">View Project</a>
+      </div>
+
+      <div class="bg-zinc-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h2 class="text-2xl font-semibold text-accent">Tennis Court Finder</h2>
+        <p class="mt-2 text-zinc-300">A mobile app for finding equidistant tennis courts between two or more users. Built with Flutter.</p>
+        <a href="https://github.com/Mt-rohan/tennis-court-finder" target="_blank" class="inline-block mt-4 px-4 py-2 bg-primary rounded hover:bg-purple-700 transition">View on GitHub</a>
+      </div>
+
+      <div class="bg-zinc-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h2 class="text-2xl font-semibold text-accent">ScrollStopper</h2>
+        <p class="mt-2 text-zinc-300">A Chrome extension that limits endless scrolling by pausing after two consecutive shorts or reels.</p>
+        <a href="https://github.com/Mt-rohan/scrollstopper" target="_blank" class="inline-block mt-4 px-4 py-2 bg-primary rounded hover:bg-purple-700 transition">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gradient-to-r from-primary to-secondary text-white text-center py-6">
+    &copy; 2025 Byteworks AI & Tech Club | All Rights Reserved
+  </footer>
+
+</body>
+</html>
