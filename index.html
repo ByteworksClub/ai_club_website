@@ -12,9 +12,10 @@
       theme: {
         extend: {
           colors: {
-            primary: '#6B21A8',
-            secondary: '#D97706',
-            accent: '#FBBF24'
+            primary: '#006064',
+            secondary: '#4DD0E1',
+            accent: '#E0F2F1',
+            textmain: '#263238'
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif']
@@ -25,7 +26,7 @@
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans bg-zinc-900 text-zinc-100">
+<body class="font-sans bg-accent text-textmain">
 
   <script>AOS.init();</script>
 
@@ -35,15 +36,15 @@
   </header>
 
   <!-- Navbar -->
-  <nav class="bg-zinc-800 shadow-md sticky top-0 z-10" data-aos="fade">
+  <nav class="bg-white shadow-md sticky top-0 z-10" data-aos="fade">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-center space-x-6 py-4">
-        <a href="#about" class="text-accent hover:text-white border-b-2 border-transparent hover:border-accent transition">About</a>
-        <a href="#meetings" class="text-accent hover:text-white border-b-2 border-transparent hover:border-accent transition">Meetings</a>
-        <a href="#leadership" class="text-accent hover:text-white border-b-2 border-transparent hover:border-accent transition">Leadership</a>
-        <a href="#join" class="text-accent hover:text-white border-b-2 border-transparent hover:border-accent transition">Why Join?</a>
-        <a href="#contact" class="text-accent hover:text-white border-b-2 border-transparent hover:border-accent transition">Join Us</a>
-        <a href="projects.html" class="text-accent hover:text-white border-b-2 border-transparent hover:border-accent transition">Projects</a>
+        <a href="#about" class="text-primary hover:text-secondary border-b-2 border-transparent hover:border-primary transition">About</a>
+        <a href="#meetings" class="text-primary hover:text-secondary border-b-2 border-transparent hover:border-primary transition">Meetings</a>
+        <a href="#leadership" class="text-primary hover:text-secondary border-b-2 border-transparent hover:border-primary transition">Leadership</a>
+        <a href="#join" class="text-primary hover:text-secondary border-b-2 border-transparent hover:border-primary transition">Why Join?</a>
+        <a href="#contact" class="text-primary hover:text-secondary border-b-2 border-transparent hover:border-primary transition">Join Us</a>
+        <a href="projects.html" class="text-primary hover:text-secondary border-b-2 border-transparent hover:border-primary transition">Projects</a>
       </div>
     </div>
   </nav>
@@ -51,15 +52,15 @@
   <!-- About Section -->
   <section id="about" class="py-16" data-aos="fade-up">
     <div class="max-w-3xl mx-auto text-center px-6">
-      <h2 class="text-3xl font-bold text-accent mb-4">Welcome to Byteworks AI & Tech Club!</h2>
-      <p class="text-lg text-zinc-300">A club for high school students (grades 9-12) passionate about AI, programming, and technology. We build innovative projects, explore emerging tech, and collaborate to push our skills to the next level.</p>
+      <h2 class="text-3xl font-bold text-primary mb-4">Welcome to Byteworks AI & Tech Club!</h2>
+      <p class="text-lg">A club for high school students (grades 9-12) passionate about AI, programming, and technology. We build innovative projects, explore emerging tech, and collaborate to push our skills to the next level.</p>
     </div>
   </section>
 
   <!-- Meetings Section -->
-  <section id="meetings" class="py-16 bg-zinc-800" data-aos="fade-right">
+  <section id="meetings" class="py-16 bg-white" data-aos="fade-right">
     <div class="max-w-3xl mx-auto text-center px-6">
-      <h2 class="text-3xl font-bold text-accent mb-4">Club Meetings</h2>
+      <h2 class="text-3xl font-bold text-primary mb-4">Club Meetings</h2>
       <p class="text-lg"> <strong>Where:</strong> Online Zoom Meetings (link provided by email)</p>
       <p class="text-lg mt-2"> <strong>When:</strong> Every Wednesday at 5 PM Pacific</p>
       <p class="text-lg mt-4">Join us to work on team coding projects, learn AI concepts, and collaborate with other like-minded students!</p>
@@ -67,35 +68,35 @@
   </section>
 
   <!-- Leadership Section -->
-  <section id="leadership" class="py-16 bg-zinc-900" data-aos="fade-left">
+  <section id="leadership" class="py-16 bg-accent" data-aos="fade-left">
     <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center text-accent mb-8">Leadership Team</h2>
+      <h2 class="text-3xl font-bold text-center text-primary mb-8">Leadership Team</h2>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-zinc-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold">President: Rohan Mishra</h3>
-          <p class="mt-2 text-zinc-300">Oversees club activities and helps guide projects and discussions.</p>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-primary">President: Rohan Mishra</h3>
+          <p class="mt-2 text-textmain">Oversees club activities and helps guide projects and discussions.</p>
         </div>
-        <div class="bg-zinc-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold">Vice President: Thomas Park</h3>
-          <p class="mt-2 text-zinc-300">Assists in managing club meetings and events.</p>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-primary">Vice President: Thomas Park</h3>
+          <p class="mt-2 text-textmain">Assists in managing club meetings and events.</p>
         </div>
-        <div class="bg-zinc-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold">Secretary: Tarak Muvva</h3>
-          <p class="mt-2 text-zinc-300">Keeps track of club activities, meeting notes, and announcements.</p>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-primary">Secretary: Tarak Muvva</h3>
+          <p class="mt-2 text-textmain">Keeps track of club activities, meeting notes, and announcements.</p>
         </div>
-        <div class="bg-zinc-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold">Treasurers: Ashwin Willy, Tanush Saraogi, & Aryaveer Dhawan</h3>
-          <p class="mt-2 text-zinc-300">Manage club funds and organize resources for projects.</p>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-primary">Treasurers: Ashwin Willy, Tanush Saraogi, & Aryaveer Dhawan</h3>
+          <p class="mt-2 text-textmain">Manage club funds and organize resources for projects.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Why Join Section -->
-  <section id="join" class="py-16 bg-zinc-800" data-aos="fade-up">
+  <section id="join" class="py-16 bg-white" data-aos="fade-up">
     <div class="max-w-3xl mx-auto text-center px-6">
-      <h2 class="text-3xl font-bold text-accent mb-6">Why Join?</h2>
-      <ul class="space-y-4 text-lg text-zinc-300">
+      <h2 class="text-3xl font-bold text-primary mb-6">Why Join?</h2>
+      <ul class="space-y-4 text-lg">
         <li>Gain experience in AI and coding</li>
         <li>Collaborate with like-minded students</li>
         <li>Build projects that make a real-world impact</li>
@@ -104,10 +105,10 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-zinc-900" data-aos="zoom-in">
+  <section id="contact" class="py-16 bg-accent" data-aos="zoom-in">
     <div class="max-w-4xl mx-auto text-center px-6">
-      <h2 class="text-3xl font-bold text-accent mb-4">Join the Club</h2>
-      <p class="text-lg text-zinc-300 mb-6">Interested in joining us? Fill out the form below:</p>
+      <h2 class="text-3xl font-bold text-primary mb-4">Join the Club</h2>
+      <p class="text-lg mb-6">Interested in joining us? Fill out the form below:</p>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdr7pdU2Ur1h94YiAMozUokqNkGw-DBlBJKd5k6MMCn0pB-1g/viewform?embedded=true" width="100%" height="1908" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
   </section>
