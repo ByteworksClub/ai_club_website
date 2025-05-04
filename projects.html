@@ -2,68 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Byteworks Projects</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            background: "#0f172a",
-            primary: "#9333ea",
-            accent: "#38bdf8",
-            text: "#e2e8f0"
-          }
-        }
-      }
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
     }
-  </script>
+    .project-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+  </style>
 </head>
-<body class="bg-background text-text font-sans">
+<body class="bg-[#F9FAFB] text-[#111827]">
 
-  <header class="bg-primary text-white text-center py-6 text-3xl font-bold">
+  <header class="bg-white text-center py-8 shadow text-3xl font-bold text-[#2563EB]">
     Byteworks Projects
   </header>
 
-  <nav class="flex justify-center bg-zinc-900 shadow-md text-text">
-    <a href="index.html" class="mx-4 py-4 hover:text-accent transition">Home</a>
+  <nav class="bg-white shadow-md sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-center space-x-6 py-4 text-lg">
+        <a href="index.html" class="hover:text-[#2563EB]">Home</a>
+      </div>
+    </div>
   </nav>
 
   <main class="max-w-6xl mx-auto py-16 px-4">
-    <h2 class="text-3xl font-bold text-accent mb-10 text-center">What We've Built</h2>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <h2 class="text-3xl font-bold text-[#2563EB] mb-10 text-center">What We've Built</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-      <div class="bg-zinc-800 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-bold text-primary">HN Keyword Trends</h3>
-        <p class="mb-2">Visualizes keyword trends on Hacker News using Algolia API and line charts.</p>
-        <a href="https://hn-trends-tau.vercel.app/" class="text-accent underline">View Live</a>
+      <!-- HN Keyword Trends (Carousel) -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <div class="swiper h-48 mb-4 rounded-lg overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/hn-1.png" alt="HN Screenshot 1" class="w-full h-full object-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/hn-2.png" alt="HN Screenshot 2" class="w-full h-full object-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/hn-3.png" alt="HN Screenshot 3" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <h3 class="text-xl font-bold text-[#2563EB]">HN Keyword Trends</h3>
+        <p class="mb-2">Visualizes trending keywords on Hacker News using Algolia API and bar/line charts.</p>
+        <a href="https://hn-trends-tau.vercel.app/" class="text-blue-500 underline">View Live</a>
       </div>
 
-      <div class="bg-zinc-800 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-bold text-primary">UTR Matcher</h3>
-        <p class="mb-2">Matches players by UTR level and location for easier tournament prep.</p>
-        <a href="https://utr-matcher.vercel.app/" class="text-accent underline">View Live</a>
+      <!-- UTR Matcher -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <img src="assets/utr-matcher.png" alt="UTR Matcher Screenshot" class="project-img mb-4" />
+        <h3 class="text-xl font-bold text-[#2563EB]">UTR Matcher</h3>
+        <p class="mb-2">Matches tennis players to schools based on UTR, major, and acceptance rate.</p>
+        <a href="https://utr-matcher.vercel.app/" class="text-blue-500 underline">View Live</a>
       </div>
 
-      <div class="bg-zinc-800 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-bold text-primary">Tennis Court Finder</h3>
-        <p class="mb-2">Offline-capable Flutter app to locate equidistant tennis courts.</p>
-        <a href="https://github.com/Mt-rohan/tennis-court-finder" class="text-accent underline">View on GitHub</a>
+      <!-- Tennis Court Finder -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <img src="assets/tennis-court-finder.png" alt="Tennis Court Finder Screenshot" class="project-img mb-4" />
+        <h3 class="text-xl font-bold text-[#2563EB]">Tennis Court Finder</h3>
+        <p class="mb-2">Flutter app that helps players find tennis courts equidistant between cities.</p>
+        <a href="https://github.com/Mt-rohan/tennis-court-finder" class="text-blue-500 underline">View on GitHub</a>
       </div>
 
-      <div class="bg-zinc-800 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-bold text-primary">ScrollStopper Chrome Extension</h3>
-        <p class="mb-2">Stops infinite scrolling after 2 reels or shorts — built to boost productivity.</p>
-        <a href="https://github.com/Mt-rohan/scrollstopper" class="text-accent underline">View on GitHub</a>
+      <!-- ScrollStopper Extension -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between">
+        <div class="flex items-center justify-center w-full h-40 bg-gray-100 rounded mb-4 text-gray-500 text-lg">
+          🔌 Chrome Extension
+        </div>
+        <h3 class="text-xl font-bold text-[#2563EB]">ScrollStopper</h3>
+        <p class="mb-2">A Chrome extension that blocks infinite scrolling after two shorts or reels — great for focus and time management.</p>
+        <a href="https://github.com/Mt-rohan/scrollstopper" class="text-blue-500 underline">View on GitHub</a>
       </div>
 
     </div>
   </main>
 
-  <footer class="bg-zinc-950 text-center text-sm py-6 text-gray-400">
+  <footer class="bg-white text-center text-sm py-6 text-gray-500 border-t">
     &copy; 2025 Byteworks AI & Tech Club — All rights reserved.
   </footer>
+
+  <!-- SwiperJS Carousel Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
 
 </body>
 </html>

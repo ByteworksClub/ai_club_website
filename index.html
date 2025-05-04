@@ -5,115 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Byteworks: AI & Tech Club</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            background: "#1E1B4B",
-            primary: "#FACC15",
-            accent: "#A78BFA",
-            text: "#F3F4F6"
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif']
-          },
-          keyframes: {
-            float: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-10px)' },
-            }
-          },
-          animation: {
-            float: 'float 4s ease-in-out infinite'
-          }
-        }
-      }
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three-globe"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
     }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    #globeViz {
+      height: 400px;
+      width: 100%;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
-<body class="bg-background text-text font-sans">
+<body class="bg-[#F9FAFB] text-[#111827]">
 
-  <header class="bg-primary text-black text-center py-10 text-4xl font-bold shadow">
+  <header class="bg-white text-center py-8 shadow text-3xl font-bold text-[#2563EB]">
     Byteworks AI & Tech Club
   </header>
 
   <nav class="bg-white shadow-md sticky top-0 z-10">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-center space-x-6 py-4 text-lg">
-        <a href="#about" class="text-black hover:text-primary">About</a>
-        <a href="#meetings" class="text-black hover:text-primary">Meetings</a>
-        <a href="#leadership" class="text-black hover:text-primary">Leadership</a>
-        <a href="#join" class="text-black hover:text-primary">Why Join?</a>
-        <a href="#contact" class="text-black hover:text-primary">Join Us</a>
-        <a href="projects.html" class="text-black hover:text-primary">Projects</a>
+        <a href="#about" class="hover:text-[#2563EB]">About</a>
+        <a href="#meetings" class="hover:text-[#2563EB]">Meetings</a>
+        <a href="#leadership" class="hover:text-[#2563EB]">Leadership</a>
+        <a href="#join" class="hover:text-[#2563EB]">Why Join?</a>
+        <a href="#contact" class="hover:text-[#2563EB]">Join Us</a>
+        <a href="projects.html" class="hover:text-[#2563EB]">Projects</a>
       </div>
     </div>
   </nav>
 
-  <!-- Animated Blob -->
-  <div class="flex justify-center mt-10">
-    <div class="w-64 h-64 bg-accent opacity-60 rounded-full blur-2xl animate-float"></div>
-  </div>
+  <!-- 3D Globe Animation -->
+  <div id="globeViz"></div>
 
-  <section id="about" class="py-16 text-center px-4" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-primary mb-4">Welcome to Byteworks!</h2>
-    <p class="text-lg text-text max-w-2xl mx-auto">A club for high school students (grades 9-12) passionate about AI, programming, and technology. We build innovative tech projects, explore emerging tools, and grow together.</p>
+  <section id="about" class="py-16 text-center px-4">
+    <h2 class="text-3xl font-bold text-[#2563EB] mb-4">Welcome to Byteworks!</h2>
+    <p class="text-lg max-w-2xl mx-auto">A club for high school students (grades 9-12) passionate about AI, programming, and technology. We build innovative tech projects, explore emerging tools, and grow together.</p>
   </section>
 
-  <section id="meetings" class="py-16 bg-white text-center" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-primary mb-4">Club Meetings</h2>
-    <p class="text-black"> <strong>Where:</strong> Online Zoom (link via email)</p>
-    <p class="text-black"> <strong>When:</strong> Wednesdays at 5 PM Pacific</p>
-    <p class="text-black">Join us for project work, AI workshops, and collaboration!</p>
+  <section id="meetings" class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-bold text-[#2563EB] mb-4">Club Meetings</h2>
+    <p><strong>Where:</strong> Online Zoom (link via email)</p>
+    <p><strong>When:</strong> Wednesdays at 5 PM Pacific</p>
+    <p>Join us for project work, AI workshops, and collaboration!</p>
   </section>
 
-  <section id="leadership" class="py-16 text-center px-4" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-primary mb-6">Leadership Team</h2>
+  <section id="leadership" class="py-16 text-center px-4">
+    <h2 class="text-3xl font-bold text-[#2563EB] mb-6">Leadership Team</h2>
     <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
       <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold text-black">President: Rohan Mishra</h3>
-        <p class="text-black">Oversees club activities and guides projects.</p>
+        <h3 class="text-xl font-semibold">President: Rohan Mishra</h3>
+        <p>Oversees club activities and guides projects.</p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold text-black">Vice President: Thomas Park</h3>
-        <p class="text-black">Supports event planning and leadership.</p>
+        <h3 class="text-xl font-semibold">Vice President: Thomas Park</h3>
+        <p>Supports event planning and leadership.</p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold text-black">Secretary: Tarak Muvva</h3>
-        <p class="text-black">Documents meetings and announcements.</p>
+        <h3 class="text-xl font-semibold">Secretary: Tarak Muvva</h3>
+        <p>Documents meetings and announcements.</p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-xl font-semibold text-black">Treasurers: Ashwin, Tanush & Aryaveer</h3>
-        <p class="text-black">Manage club funds and project resources.</p>
+        <h3 class="text-xl font-semibold">Treasurers: Ashwin, Tanush & Aryaveer</h3>
+        <p>Manage club funds and project resources.</p>
       </div>
     </div>
   </section>
 
-  <section id="join" class="py-16 bg-white text-center" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-primary mb-4">Why Join?</h2>
-    <ul class="space-y-4 text-lg text-black">
+  <section id="join" class="py-16 bg-white text-center">
+    <h2 class="text-3xl font-bold text-[#2563EB] mb-4">Why Join?</h2>
+    <ul class="space-y-4 text-lg">
       <li>Gain real-world AI and coding experience</li>
       <li>Collaborate with like-minded peers</li>
       <li>Build projects that solve real problems</li>
     </ul>
   </section>
 
-  <section id="contact" class="py-16 px-4" data-aos="zoom-in">
-    <h2 class="text-3xl font-bold text-accent mb-6 text-center">Join the Club</h2>
+  <section id="contact" class="py-16 px-4">
+    <h2 class="text-3xl font-bold text-[#2563EB] mb-6 text-center">Join the Club</h2>
     <div class="max-w-4xl mx-auto">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdr7pdU2Ur1h94YiAMozUokqNkGw-DBlBJKd5k6MMCn0pB-1g/viewform?embedded=true" 
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdr7pdU2Ur1h94YiAMozUokqNkGw-DBlBJKd5k6MMCn0pB-1g/viewform?embedded=true"
         width="100%" height="1908" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
   </section>
 
-  <footer class="bg-primary text-black text-center py-6">
+  <footer class="bg-white text-center text-sm py-6 text-gray-500 border-t">
     &copy; 2025 Byteworks AI & Tech Club — All rights reserved.
   </footer>
 
-  <script>AOS.init();</script>
+  <script>
+    const globeContainer = document.getElementById('globeViz');
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(globeContainer.clientWidth, 400);
+    globeContainer.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, globeContainer.clientWidth / 400, 0.1, 1000);
+    camera.position.z = 300;
+
+    const globe = new ThreeGlobe().globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg');
+    scene.add(globe);
+
+    const ambientLight = new THREE.AmbientLight(0xbbbbbb);
+    scene.add(ambientLight);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(0, 0, 1);
+    scene.add(directionalLight);
+
+    const animate = function () {
+      requestAnimationFrame(animate);
+      globe.rotation.y += 0.0015;
+      renderer.render(scene, camera);
+    };
+
+    animate();
+  </script>
+
 </body>
 </html>
