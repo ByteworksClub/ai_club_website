@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Byteworks AI & Tech Club</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script>
     tailwind.config = {
       theme: {
@@ -24,13 +26,15 @@
 </head>
 <body class="font-sans bg-gray-50 text-gray-800">
 
+  <script>AOS.init();</script>
+
   <!-- Header -->
-  <header class="bg-gradient-to-r from-primary to-secondary text-white text-center py-10 shadow-lg">
+  <header class="bg-gradient-to-r from-primary to-secondary text-white text-center py-10 shadow-lg" data-aos="fade-down">
     <h1 class="text-4xl font-bold">Byteworks AI & Tech Club</h1>
   </header>
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md sticky top-0 z-10">
+  <nav class="bg-white shadow-md sticky top-0 z-10" data-aos="fade">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between items-center py-4">
         <div class="hidden md:flex space-x-6">
@@ -45,7 +49,7 @@
   </nav>
 
   <!-- About Section -->
-  <section id="about" class="py-16">
+  <section id="about" class="py-16" data-aos="fade-up">
     <div class="max-w-3xl mx-auto text-center px-6">
       <h2 class="text-3xl font-bold text-primary mb-4">Welcome to Byteworks AI & Tech Club!</h2>
       <p class="text-lg text-gray-700">A club for high school students (grades 9-12) passionate about AI, programming, and technology. We build innovative projects, explore emerging tech, and collaborate to push our skills to the next level.</p>
@@ -53,7 +57,7 @@
   </section>
 
   <!-- Meetings Section -->
-  <section id="meetings" class="py-16 bg-white">
+  <section id="meetings" class="py-16 bg-white" data-aos="fade-right">
     <div class="max-w-3xl mx-auto text-center px-6">
       <h2 class="text-3xl font-bold text-primary mb-4">Club Meetings</h2>
       <p class="text-lg"> <strong>Where:</strong> Online Zoom Meetings (link provided by email)</p>
@@ -63,7 +67,7 @@
   </section>
 
   <!-- Leadership Section -->
-  <section id="leadership" class="py-16 bg-gray-100">
+  <section id="leadership" class="py-16 bg-gray-100" data-aos="fade-left">
     <div class="max-w-4xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center text-primary mb-8">Leadership Team</h2>
       <div class="grid md:grid-cols-2 gap-6">
@@ -88,7 +92,7 @@
   </section>
 
   <!-- Why Join Section -->
-  <section id="join" class="py-16 bg-white">
+  <section id="join" class="py-16 bg-white" data-aos="fade-up">
     <div class="max-w-3xl mx-auto text-center px-6">
       <h2 class="text-3xl font-bold text-primary mb-6">Why Join?</h2>
       <ul class="space-y-4 text-lg text-gray-700">
@@ -100,16 +104,16 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-100">
+  <section id="contact" class="py-16 bg-gray-100" data-aos="zoom-in">
     <div class="max-w-3xl mx-auto text-center px-6">
       <h2 class="text-3xl font-bold text-primary mb-4">Join the Club</h2>
-      <p class="text-lg text-gray-700">Interested in joining us? Sign up for the club below!</p>
-      <a href="mailto:mishrarohan@icloud.com" class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">Contact Us</a>
+      <p class="text-lg text-gray-700 mb-6">Interested in joining us? Fill out the form below:</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYourGoogleFormLink/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gradient-to-r from-primary to-secondary text-white text-center py-6">
+  <footer class="bg-gradient-to-r from-primary to-secondary text-white text-center py-6" data-aos="fade-up">
     &copy; 2025 Byteworks AI & Tech Club | All Rights Reserved
   </footer>
 
