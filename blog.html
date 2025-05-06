@@ -1,4 +1,3 @@
-<!-- blog.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,77 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Byteworks Blog</title>
   <meta name="description" content="Explore updates from Byteworks AI & Tech Club — past events, new projects, and AI trends." />
-  <meta property="og:title" content="Byteworks Blog" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/logo.png" />
-  <meta property="og:description" content="Student-led blog sharing AI projects, tech news, and club updates." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f1f5f9; /* slate-100 */
+      color: #1e293b; /* slate-800 */
+    }
+  </style>
 </head>
-<body class="bg-[#F9FAFB] text-[#111827] font-sans">
+<body class="text-slate-800">
 
-  <header class="bg-white text-center py-8 shadow text-3xl font-bold text-[#2563EB]">
-    Byteworks Blog
+  <!-- Header -->
+  <header class="bg-white shadow py-8 text-center">
+    <h1 class="text-4xl font-extrabold text-teal-700">Byteworks Blog</h1>
   </header>
 
-  <nav class="bg-white shadow-md sticky top-0 z-10">
+  <!-- Nav -->
+  <nav class="bg-white shadow-sm sticky top-0 z-10">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="flex justify-center space-x-6 py-4 text-lg">
-        <a href="index.html" class="hover:text-[#2563EB]">Home</a>
-        <a href="projects.html" class="hover:text-[#2563EB]">Projects</a>
-        <a href="blog.html" class="text-[#2563EB] font-semibold">Blog</a>
-      </div>
+      <ul class="flex justify-center space-x-6 py-4 text-md font-medium">
+        <li><a href="index.html" class="hover:text-teal-600">Home</a></li>
+        <li><a href="projects.html" class="hover:text-teal-600">Projects</a></li>
+        <li><a href="blog.html" class="text-teal-700">Blog</a></li>
+      </ul>
     </div>
   </nav>
 
+  <!-- Blog Posts -->
   <main class="max-w-4xl mx-auto py-12 px-4 space-y-10">
 
-    <!-- Posts from Feb 2 to May 5 -->
-    <!-- Previous 7 posts (Feb 2–Mar 15) remain unchanged -->
-
-    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-      <h2 class="text-2xl font-bold text-[#2563EB] mb-2">Progress on the NFL Predictor</h2>
-      <p class="text-gray-600 text-sm mb-2">Posted on March 22nd, 2025 by Tanush Saraogi</p>
-      <p class="mb-3">Our team has implemented the core logic for predicting NFL outcomes using historical data and machine learning. The web interface has been improved with a weekly update table for predictions. We also reviewed accuracy metrics and started planning model improvements. The tool is now hosted live for testing. Members are providing feedback for next steps.</p>
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Launching Byteworks</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on February 2nd, 2025 by Rohan Mishra</p>
+      <p>We officially launched Byteworks this week with our first meeting. The focus was on introducing the club's goals and gathering project ideas from members. A few of us discussed building AI tools that could help students study more efficiently. We’ve also started organizing our roles and project documentation using shared drives. It’s exciting to see this come together from scratch.</p>
     </article>
 
-    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-      <h2 class="text-2xl font-bold text-[#2563EB] mb-2">Keyword Trends Site Goes Live</h2>
-      <p class="text-gray-600 text-sm mb-2">Posted on March 29th, 2025 by Ashwin Willy</p>
-      <p class="mb-3">We launched our Hacker News keyword trends tracker. The project uses the Algolia API to analyze trending terms and display frequency charts. It includes search functionality, and the layout was refined based on member feedback. Future updates will add tag filtering and export options. Overall, the release went smoothly and drew attention from several classmates.</p>
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">AI Tools Brainstorm</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on February 9th, 2025 by Aryaveer Dhawan</p>
+      <p>This week’s meeting focused on brainstorming potential AI projects. Members proposed an NFL game predictor, a Chrome extension to limit short-form video distractions, and a tennis court locator. We also explored how LLMs like ChatGPT could be used in creative or practical student tools. The group discussions were energetic and productive. Everyone is now forming teams around shared interests.</p>
     </article>
 
-    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-      <h2 class="text-2xl font-bold text-[#2563EB] mb-2">App Enhancements and Firebase Integration</h2>
-      <p class="text-gray-600 text-sm mb-2">Posted on April 5th, 2025 by Rohan Mishra</p>
-      <p class="mb-3">We continued work on the Tennis Court Finder, implementing Firebase integration to store user input and location data. We also refactored some of the UI components to improve user experience. Teams are meeting twice a week now to keep momentum. We've added a new member to help with testing. It's shaping up to be our most polished app so far.</p>
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Project Teams Finalized</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on February 16th, 2025 by Tarak Muvva</p>
+      <p>We finalized teams for our first round of Byteworks projects. The club is now working on three different tools, including an equidistant tennis court finder and a personalized UTR college matcher. Team leads have been assigned, and each group has created GitHub repositories to manage code. We also reviewed project planning techniques using Kanban boards. Progress tracking will begin next week.</p>
     </article>
 
-    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-      <h2 class="text-2xl font-bold text-[#2563EB] mb-2">Improving the Blog and SEO</h2>
-      <p class="text-gray-600 text-sm mb-2">Posted on April 12th, 2025 by Tarak Muvva</p>
-      <p class="mb-3">This week we focused on refining our blog structure. We added meta tags for social sharing and reorganized the layout for readability. Team members also learned about basic search engine optimization. Our next goal is to add individual post pages and user comments. This update helps build credibility and discoverability for Byteworks online.</p>
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Website Design Sprint</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on February 23rd, 2025 by Ashwin Willy</p>
+      <p>This week we began working on the official Byteworks website. Using HTML, Tailwind CSS, and a design-first approach, we structured our homepage and projects page. The Projects section now includes live links and GitHub references for student work. Our team also set up deployment via GitHub Pages. Next, we’ll focus on improving mobile responsiveness.</p>
     </article>
 
-    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-      <h2 class="text-2xl font-bold text-[#2563EB] mb-2">Finalizing Project Milestones</h2>
-      <p class="text-gray-600 text-sm mb-2">Posted on April 19th, 2025 by Aryaveer Dhawan</p>
-      <p class="mb-3">All three major Byteworks projects have reached version one. The Chrome extension team is wrapping up final bug fixes, and the UTR Matcher now supports over 100 schools. Members submitted documentation and recorded demo videos. These projects will be showcased at our end-of-year event. It’s a major step for everyone who contributed.</p>
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">30 Members and Counting</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on March 1st, 2025 by Aryaveer Dhawan</p>
+      <p>We’re excited to share that Byteworks now has over 30 members. Participation in project teams has been strong, and new students continue to join weekly. We’ve created onboarding materials to help new members get involved quickly. The leadership team is now reviewing ideas for a potential newsletter. Growth has been steady and encouraging for everyone involved.</p>
     </article>
 
-    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-      <h2 class="text-2xl font-bold text-[#2563EB] mb-2">Looking Ahead to Summer</h2>
-      <p class="text-gray-600 text-sm mb-2">Posted on April 26th, 2025 by Thomas Park</p>
-      <p class="mb-3">With final exams approaching, we discussed how Byteworks can continue over the summer. Ideas included a mentoring program, open-source contributions, and smaller async builds. Members voted on priorities for summer planning. Leadership transitions will also begin next month. It’s been rewarding to reflect on how far the club has come.</p>
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Exploring Git Workflows</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on March 8th, 2025 by Thomas Park</p>
+      <p>This week’s session focused on learning how to use GitHub collaboratively. We covered key concepts like commits, branching, pull requests, and resolving merge conflicts. Each project team is now pushing regular updates to shared repositories. We’ve also introduced simple README templates to standardize documentation. It's a valuable skillset for all of us as we build larger systems.</p>
     </article>
 
-    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-      <h2 class="text-2xl font-bold text-[#2563EB] mb-2">Celebrating Our Progress</h2>
-      <p class="text-gray-600 text-sm mb-2">Posted on May 5th, 2025 by Armaan Gill</p>
-      <p class="mb-3">Today we took a moment to appreciate how much the club has grown since February. From just an idea to three working tools, a full website, and 30+ members, it’s been a huge team effort. Every member played a role, whether in coding, writing, designing, or organizing. As we close out the semester, we’re already talking about next year’s roadmap. There’s a lot more we hope to build together.</p>
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Leadership Openings</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on March 15th, 2025 by Armaan Gill</p>
+      <p>We announced new leadership openings this week to support the club’s rapid growth. Roles include a blog editor, a workshop coordinator, and a tech lead for web projects. Members interested in applying will submit short interest forms. These roles are designed to support continuity and ownership. We'll begin onboarding new student leaders before spring break.</p>
+    </article>
+
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Progress on the NFL Predictor</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on March 22nd, 2025 by Tanush Saraogi</p>
+      <p>Our team has implemented the core logic for predicting NFL outcomes using historical data and machine learning. The web interface has been improved with a weekly update table for predictions. We also reviewed accuracy metrics and started planning model improvements. The tool is now hosted live for testing. Members are providing feedback for next steps.</p>
+    </article>
+
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Keyword Trends Site Goes Live</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on March 29th, 2025 by Ashwin Willy</p>
+      <p>We launched our Hacker News keyword trends tracker. The project uses the Algolia API to analyze trending terms and display frequency charts. It includes search functionality, and the layout was refined based on member feedback. Future updates will add tag filtering and export options. Overall, the release went smoothly and drew attention from several classmates.</p>
+    </article>
+
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">App Enhancements and Firebase Integration</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on April 5th, 2025 by Rohan Mishra</p>
+      <p>We continued work on the Tennis Court Finder, implementing Firebase integration to store user input and location data. We also refactored some of the UI components to improve user experience. Teams are meeting twice a week now to keep momentum. We've added a new member to help with testing. It's shaping up to be our most polished app so far.</p>
+    </article>
+
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Improving the Blog and SEO</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on April 12th, 2025 by Tarak Muvva</p>
+      <p>This week we focused on refining our blog structure. We added meta tags for social sharing and reorganized the layout for readability. Team members also learned about basic search engine optimization. Our next goal is to add individual post pages and user comments. This update helps build credibility and discoverability for Byteworks online.</p>
+    </article>
+
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Finalizing Project Milestones</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on April 19th, 2025 by Aryaveer Dhawan</p>
+      <p>All three major Byteworks projects have reached version one. The Chrome extension team is wrapping up final bug fixes, and the UTR Matcher now supports over 100 schools. Members submitted documentation and recorded demo videos. These projects will be showcased at our end-of-year event. It’s a major step for everyone who contributed.</p>
+    </article>
+
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Looking Ahead to Summer</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on April 26th, 2025 by Thomas Park</p>
+      <p>With final exams approaching, we discussed how Byteworks can continue over the summer. Ideas included a mentoring program, open-source contributions, and smaller async builds. Members voted on priorities for summer planning. Leadership transitions will also begin next month. It’s been rewarding to reflect on how far the club has come.</p>
+    </article>
+
+    <article class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-2xl font-bold text-teal-700 mb-1">Celebrating Our Progress</h2>
+      <p class="text-sm text-slate-500 mb-3">Posted on May 5th, 2025 by Armaan Gill</p>
+      <p>Today we took a moment to appreciate how much the club has grown since February. From just an idea to three working tools, a full website, and 30+ members, it’s been a huge team effort. Every member played a role, whether in coding, writing, designing, or organizing. As we close out the semester, we’re already talking about next year’s roadmap. There’s a lot more we hope to build together.</p>
     </article>
 
   </main>
 
+  <!-- Footer -->
   <footer class="bg-white text-center text-sm py-6 text-gray-500 border-t">
     &copy; 2025 Byteworks AI & Tech Club — All rights reserved.
   </footer>
