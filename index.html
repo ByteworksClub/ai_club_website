@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Byteworks: AI & Tech Club</title>
 
   <!-- Tailwind CSS -->
@@ -16,10 +16,12 @@
   <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
   <script src="https://unpkg.com/three-globe@2.24.10/dist/three-globe.min.js"></script>
 
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #F3F4F6;
+      background-color: #F9FAFB;
       color: #1F2937;
     }
     #globe-container {
@@ -40,57 +42,51 @@
   </header>
 
   <!-- Nav -->
-  <!-- Nav -->
-<!-- Nav -->
-<nav class="bg-white shadow sticky top-0 z-10">
-  <div class="max-w-6xl mx-auto px-4">
-    <ul class="flex justify-center space-x-6 py-4">
-      <li><a href="#about" class="hover:text-[#14B8A6]">About</a></li>
-      <li><a href="#meetings" class="hover:text-[#14B8A6]">Meetings</a></li>
-      <li><a href="#leadership" class="hover:text-[#14B8A6]">Leadership</a></li>
-      <li><a href="#join" class="hover:text-[#14B8A6]">Why Join?</a></li>
-      <li><a href="#contact" class="hover:text-[#14B8A6]">Join Us</a></li>
-      <a href="blog.html" class="hover:text-[#14B8A6]">Blog</a>
-
-    </ul>
-  </div>
-</nav>
-
-
-<!-- Lottie Hero (above the Globe) -->
-<section class="bg-[#F3F4F6] py-16 px-4 text-center border-b border-gray-200">
-  <div class="max-w-4xl mx-auto">
-    <lottie-player 
-      src="https://assets10.lottiefiles.com/packages/lf20_k86wxpgr.json" 
-      background="transparent" 
-      speed="1" 
-      loop 
-      autoplay 
-      style="width: 300px; margin: auto;">
-    </lottie-player>
-
-    <h1 class="text-3xl md:text-4xl font-semibold mt-8 text-[#14B8A6]">We’re learning by building</h1>
-    <p class="text-lg md:text-xl mt-4 text-gray-700">
-      Byteworks is a space where students explore AI, code, and ideas — together, one project at a time.
-    </p>
-
-    <div class="mt-6">
-      <a href="projects.html" class="bg-[#14B8A6] text-white px-6 py-3 rounded-lg shadow hover:bg-[#0d9488] transition">
-        See Our Projects
-      </a>
+  <nav class="bg-white shadow sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <ul class="flex justify-center space-x-6 py-4 text-lg">
+        <li><a href="#about" class="hover:text-[#14B8A6]">About</a></li>
+        <li><a href="#meetings" class="hover:text-[#14B8A6]">Meetings</a></li>
+        <li><a href="#leadership" class="hover:text-[#14B8A6]">Leadership</a></li>
+        <li><a href="#join" class="hover:text-[#14B8A6]">Why Join?</a></li>
+        <li><a href="#contact" class="hover:text-[#14B8A6]">Join Us</a></li>
+        <li><a href="blog.html" class="hover:text-[#14B8A6]">Blog</a></li>
+      </ul>
     </div>
-  </div>
-</section>
+  </nav>
 
+  <!-- Lottie Hero Section -->
+  <section class="bg-[#F9FAFB] py-16 px-4 text-center border-b border-gray-200">
+    <div class="max-w-4xl mx-auto">
+      <lottie-player 
+        src="https://assets10.lottiefiles.com/packages/lf20_k86wxpgr.json" 
+        background="transparent" 
+        speed="1" 
+        loop 
+        autoplay 
+        style="width: 300px; margin: auto;">
+      </lottie-player>
 
+      <h2 class="text-3xl md:text-4xl font-semibold mt-8 text-[#14B8A6]">We’re learning by building</h2>
+      <p class="text-lg md:text-xl mt-4 text-gray-700">
+        Byteworks is a space where students explore AI, code, and ideas — together, one project at a time.
+      </p>
 
-  <!-- Hero Section -->
+      <div class="mt-6">
+        <a href="#about" class="bg-[#14B8A6] text-white px-6 py-3 rounded-lg shadow hover:bg-[#0f766e] transition">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Globe Section -->
   <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 py-16 max-w-7xl mx-auto" data-aos="fade-up">
     <!-- Text -->
     <div class="md:w-1/2 text-center md:text-left space-y-4">
-      <h2 class="text-3xl font-bold text-[#14B8A6]">Welcome to Byteworks!</h2>
+      <h2 class="text-3xl font-bold text-[#14B8A6]">A Global Perspective</h2>
       <p class="text-lg leading-relaxed">
-        A club for high school students (grades 9-12) passionate about AI, programming, and technology. We build innovative tech projects, explore emerging tools, and grow together.
+        We’re inspired by global innovation and driven by student curiosity. Our community brings different perspectives together to solve real problems.
       </p>
     </div>
     <!-- Globe -->
@@ -102,7 +98,7 @@
   <!-- About Section -->
   <section id="about" class="py-16 px-6 max-w-4xl mx-auto text-center" data-aos="fade-up">
     <h2 class="text-2xl font-bold text-[#14B8A6] mb-4">About the Club</h2>
-    <p class="text-lg">
+    <p class="text-lg text-gray-700">
       Byteworks is where curiosity meets code. From AI tools to real-world tech applications, we work together to turn ideas into polished projects — while learning and having fun together.
     </p>
   </section>
@@ -122,20 +118,20 @@
       <h2 class="text-2xl font-bold text-[#14B8A6] mb-8">Leadership Team</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold">President: Rohan Mishra</h3>
-          <p>Oversees club activities and guides projects.</p>
+          <h3 class="text-xl font-semibold">Rohan Mishra</h3>
+          <p class="text-sm text-gray-600">President — Oversees club activities and guides projects.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold">Vice President: Ashwin Willy</h3>
-          <p>Assists in managing meetings and events.</p>
+          <h3 class="text-xl font-semibold">Ashwin Willy</h3>
+          <p class="text-sm text-gray-600">Vice President — Assists in managing meetings and events.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold">Secretary: Tarak Muvva</h3>
-          <p>Documents meeting notes and announcements.</p>
+          <h3 class="text-xl font-semibold">Tarak Muvva</h3>
+          <p class="text-sm text-gray-600">Secretary — Documents meeting notes and announcements.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold">Treasurers: Tanush Saraogi & Aryaveer Dhawan</h3>
-          <p>Manage club funds and resources.</p>
+          <h3 class="text-xl font-semibold">Tanush Saraogi & Aryaveer Dhawan</h3>
+          <p class="text-sm text-gray-600">Treasurers — Manage club funds and resources.</p>
         </div>
       </div>
     </div>
@@ -145,7 +141,7 @@
   <section id="join" class="py-16 bg-white" data-aos="fade-up">
     <div class="max-w-4xl mx-auto px-6 text-center space-y-4">
       <h2 class="text-2xl font-bold text-[#14B8A6]">Why Join?</h2>
-      <ul class="list-disc list-inside text-lg">
+      <ul class="list-disc list-inside text-lg text-gray-700">
         <li>Gain hands-on AI and coding experience</li>
         <li>Collaborate with like-minded peers</li>
         <li>Build impactful real-world projects</li>
@@ -157,7 +153,7 @@
   <section id="contact" class="py-16 px-6" data-aos="fade-up">
     <div class="max-w-4xl mx-auto text-center space-y-6">
       <h2 class="text-2xl font-bold text-[#14B8A6]">Join the Club</h2>
-      <p class="text-lg">Fill out the form below to become a member:</p>
+      <p class="text-lg text-gray-700">Fill out the form below to become a member:</p>
       <iframe 
         src="https://docs.google.com/forms/d/e/1FAIpQLSdr7pdU2Ur1h94YiAMozUokqNkGw-DBlBJKd5k6MMCn0pB-1g/viewform?embedded=true" 
         width="100%" height="1800" frameborder="0">
@@ -167,8 +163,11 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 bg-white text-center text-gray-500 border-t" data-aos="fade-up">
-    &copy; 2025 Byteworks AI & Tech Club — All rights reserved.
+  <footer class="py-8 bg-white text-center text-gray-500 border-t" data-aos="fade-up">
+    <div class="space-y-2">
+      <p class="text-sm">&copy; 2025 Byteworks AI & Tech Club — All rights reserved.</p>
+      <p class="text-xs text-gray-400">Student-led. Project-driven. Open to all curious minds.</p>
+    </div>
   </footer>
 
   <!-- Scripts -->
@@ -176,7 +175,6 @@
     AOS.init();
   </script>
   <script>
-    // Globe setup with transparent background
     const container = document.getElementById('globe-container');
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(container.clientWidth, 400);
