@@ -8,8 +8,8 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f1f5f9; /* slate-100 */
-      color: #1e293b; /* slate-800 */
+      background-color: #f1f5f9;
+      color: #1e293b;
     }
   </style>
 </head>
@@ -36,12 +36,12 @@
     <h2 class="text-3xl font-bold text-teal-700 mb-10 text-center">What We've Built</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-      <!-- HN Keyword Trends -->
+      <!-- HN Keyword Trends with Slideshow -->
       <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets/hn-1.png" alt="HN Screenshot" class="w-full h-48 object-cover rounded mb-4">
+        <img id="hn-slideshow" src="assets/hn-1.png" alt="HN Screenshot" class="w-full h-48 object-cover rounded mb-4">
         <h3 class="text-xl font-bold text-teal-700">HN Keyword Trends</h3>
         <p class="text-sm mb-2">Visualizes trending keywords on Hacker News using Algolia API and bar/line charts.</p>
-        <a href="#" class="text-blue-600 hover:underline text-sm">View Live</a>
+        <a href="https://your-live-url.com/hn-trends" target="_blank" class="text-blue-600 hover:underline text-sm">View Live</a>
       </div>
 
       <!-- UTR Matcher -->
@@ -49,7 +49,7 @@
         <img src="assets/utr-matcher.png" alt="UTR Matcher Screenshot" class="w-full h-48 object-cover rounded mb-4">
         <h3 class="text-xl font-bold text-teal-700">UTR Matcher</h3>
         <p class="text-sm mb-2">Matches tennis players to schools based on UTR, major, and acceptance rate.</p>
-        <a href="#" class="text-blue-600 hover:underline text-sm">View Live</a>
+        <a href="https://your-live-url.com/utr-matcher" target="_blank" class="text-blue-600 hover:underline text-sm">View Live</a>
       </div>
 
       <!-- Tennis Court Finder -->
@@ -57,17 +57,17 @@
         <img src="assets/tennis-court-finder.png" alt="Tennis Court Finder Screenshot" class="w-full h-48 object-cover rounded mb-4">
         <h3 class="text-xl font-bold text-teal-700">Tennis Court Finder</h3>
         <p class="text-sm mb-2">Flutter app that helps players find tennis courts equidistant between cities.</p>
-        <a href="#" class="text-blue-600 hover:underline text-sm">View on GitHub</a>
+        <a href="https://github.com/your-github/tennis-court-finder" target="_blank" class="text-blue-600 hover:underline text-sm">View on GitHub</a>
       </div>
 
-      <!-- Chrome Extension -->
+      <!-- ScrollStopper -->
       <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
         <div class="flex items-center justify-center w-full h-48 bg-gray-100 rounded mb-4 text-gray-500 text-lg">
           🔌 Chrome Extension
         </div>
         <h3 class="text-xl font-bold text-teal-700">ScrollStopper</h3>
         <p class="text-sm mb-2">A Chrome extension that blocks infinite scrolling after two shorts or reels — great for focus and time management.</p>
-        <a href="#" class="text-blue-600 hover:underline text-sm">View on GitHub</a>
+        <a href="https://github.com/your-github/scrollstopper" target="_blank" class="text-blue-600 hover:underline text-sm">View on GitHub</a>
       </div>
 
       <!-- NFL Predictor -->
@@ -75,7 +75,7 @@
         <img src="assets/nfl-predictor.png" alt="NFL Predictor Screenshot" class="w-full h-48 object-cover rounded mb-4">
         <h3 class="text-xl font-bold text-teal-700">NFL Match Outcome Predictor</h3>
         <p class="text-sm mb-2">Predicts NFL game results using AI and machine learning based on team stats and trends.</p>
-        <a href="#" class="text-blue-600 hover:underline text-sm">Try It Live</a>
+        <a href="https://your-live-url.com/nfl-predictor" target="_blank" class="text-blue-600 hover:underline text-sm">Try It Live</a>
       </div>
 
     </div>
@@ -85,6 +85,17 @@
   <footer class="bg-white text-center text-sm py-6 text-gray-500 border-t">
     &copy; 2025 Byteworks AI & Tech Club — All rights reserved.
   </footer>
+
+  <!-- Slideshow Script -->
+  <script>
+    const images = ["assets/hn-1.png", "assets/hn-2.png", "assets/hn-3.png"];
+    let index = 0;
+    const slideshow = document.getElementById("hn-slideshow");
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      slideshow.src = images[index];
+    }, 3000);
+  </script>
 
 </body>
 </html>
